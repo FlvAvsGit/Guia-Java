@@ -32,8 +32,8 @@
 		a.	Abra o CMD como Adm;
 		b.	execute: netstat -o -n -a;
 		c.	Procure na coluna Endereco local o Ip que esta executando a porta. exemplo:
-			i.	Protocolo                End Local                                                  PID
-			ii.	TCP                         0.0.0.0:3306                                             6336
+			i.	Protocolo                End Local                          PID
+			ii.	TCP                      0.0.0.0:3306                      6336
 		d.	Para Alterar a porta que irá rodar o projeto:
 			i.	No application.properties incluir :	server.port=8081
 
@@ -50,5 +50,22 @@
 		f.	Git Add .
 		g.	Git commit -m “Commit inicial”
 		h.	Git push -u origin master
-
-	13.
+	
+	12.1	 create a new repository on the command line	
+		echo "# Interface-1" >> README.md
+		a.	git init
+		b.	git add README.md
+		c.	git commit -m "first commit"
+		d.	git branch -M main
+		e.	git remote add origin https://github.com/FlvAvsGit/Interface-1.git
+		f.	git push -u origin main
+		
+	12.2	push an existing repository from the command line
+		a.	git remote add origin https://github.com/FlvAvsGit/Interface-1.git
+		b.	git branch -M main
+		c.	git push -u origin main
+		
+	13. LocalDate.now() 			==> Data de hoje
+		LocalDate.now().plusDays(1) ==> Data de Hoje + 1 dia
+		
+	14.	
